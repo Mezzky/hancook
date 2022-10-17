@@ -1,0 +1,24 @@
+{
+  "name": "hancook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/CSS/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mezzky/hancook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mezzky/hancook/issues"
+  },
+  "homepage": "https://github.com/Mezzky/hancook#readme",
+  "dependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
