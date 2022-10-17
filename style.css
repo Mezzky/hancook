@@ -1,0 +1,210 @@
+:root {
+  --font: "Poppins";
+  --main: #500de0;
+  --paragraph: #787878;
+  --box-border: #4d4d4d;
+  --box: #787878;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+  height: 10000px;
+}
+
+/* Header Start */
+header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+nav ul {
+  margin-left: 100px;
+  display: flex;
+  width: 60%;
+  font-size: 20px;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+header h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header .button .masuk {
+  border: none;
+  background-color: var(--main);
+  padding: 8px 30px;
+  border-radius: 5px;
+}
+
+header .button .daftar {
+  border: none;
+  background: rgba(120, 120, 120, 0.2);
+  padding: 8px 30px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+/* Header End */
+
+/* Section Beranda Start */
+
+#beranda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+#beranda .active {
+  color: var(--main);
+  font-size: 40px;
+}
+
+#beranda .active-text {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#beranda .hidden-text {
+  color: var(--paragraph);
+  font-size: 13px;
+}
+
+#beranda .button {
+  display: flex;
+  gap: 25px;
+}
+
+#beranda .button .kontak {
+  border: none;
+  background-color: blue;
+  padding: 10px 50px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+#beranda .button .jasa {
+  border: none;
+  background: rgba(120, 120, 120, 0.2);
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+/* Section  Beranda End */
+
+/* Section Jasa Start */
+
+#jasa {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 25px;
+  margin: 0 70px;
+  margin-top: 100px;
+}
+
+#jasa .border-box {
+  background: rgba(120, 120, 120, 0.2);
+  border-radius: 5px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#jasa .border-box .active {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 30px;
+}
+
+#jasa .border-box p {
+  color: var(--paragraph);
+  margin-left: 30px;
+  font-size: 12px;
+  width: 80%;
+}
+
+#jasa .border-box button {
+  border: none;
+  background-color: var(--main);
+  padding: 3px 15px;
+  border-radius: 2px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#jasa .border-box img {
+  margin-left: 30px;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+/* Section Jasa End */
+
+/* Section Tim Start */
+
+#tim {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#tim .active {
+  color: var(--main);
+  font-size: 25px;
+}
+
+#tim h5 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#tim p {
+  margin-bottom: 5px;
+  color: var(--paragraph);
+}
+
+#tim .neutral {
+  color: #fff;
+  margin-top: 10px;
+}
+
+#tim .box {
+  margin-top: 50px;
+  display: flex;
+  gap: 25px;
+}
+
+#tim .border-box {
+  background: rgba(120, 120, 120, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 40vw;
+  gap: 5px;
+}
+
+#tim .border-box .icon-self {
+  display: flex;
+  gap: 10px;
+}
+
+/* Section Tim End */
