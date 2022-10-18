@@ -20,6 +20,8 @@ module.exports = {
         main: "#500DE0",
         boxborder: "#4D4D4D",
         bg: "#212027",
+        outer: "#292929",
+        diamond: "(105.94% 1266.17% at 0% 8.28%, #5726C0 0%, #4615B0 100%)",
       },
     },
   },
