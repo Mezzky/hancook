@@ -1,31 +1,126 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/output.css" />
     <title>Hancook</title>
-</head>
+  </head>
 
-<body>
-    <header class="flex w-full fixed justify-between items-center p-5">
-        <h2 class="">Hancook</h2>
-        <nav>
-            <ul class="flex gap-2">
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Jasa</a></li>
-                <li><a href="#">Tim</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Harga</a></li>
-            </ul>
-        </nav>
-        <div class="button">
-            <button class="masuk">Masuk</button>
-            <button class="daftar">Daftar</button>
-        </div>
+  <body class="bg-bg font-poppins">
+    <header class="flex w-full fixed justify-around items-center p-5">
+      <h2 class="text-white text-2xl font-bold">Hancook</h2>
+      <nav>
+        <ul class="flex gap-2 text-white ml-24 text-xl">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Jasa</a></li>
+          <li><a href="#">Tim</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Harga</a></li>
+        </ul>
+      </nav>
+      <div class="button text-white flex gap-3">
+        <button class="masuk bg-main px-6 py-2 rounded">Masuk</button>
+        <button class="daftar bg-boxborder px-6 py-2 rounded">Daftar</button>
+      </div>
     </header>
-    
-</body>
 
+    <!-- HOME -->
+    <section id="home" class="pt-48 text-white">
+      <center>
+        <div class="texting flex flex-col gap-2">
+          <p class="text-main text-4xl font-bold">Hancook</p>
+          <h5 class="font-bold text-5xl">Solusi terbaik untuk pembuatan</h5>
+          <h5 class="font-bold text-5xl">design,website dan aplikasi</h5>
+          <p class="text-paragraf text-xl">Kami menyediakan jasa design web/aplikasi, pembuatan website,</p>
+          <p class="text-paragraf text-xl">pembuatan aplikasi. Kami mengedepankan kualitas</p>
+          <p class="text-paragraf text-xl">daripada kuantitas</p>
+        </div>
+      </center>
+      <div class="button text-white flex gap-3 justify-center pt-14">
+        <button class="masuk bg-main px-14 py-4 rounded-md">Kontak</button>
+        <button class="daftar bg-boxborder px-16 py-4 rounded-md">Jasa</button>
+      </div>
+    </section>
+
+    <!-- JASA -->
+    <section id="jasa" class="flex pt-32 justify-center gap-4 m-32">
+      <div class="bg-box pl-5 pr-5 pt-10 pb-12 rounded">
+        <i class="fa-brands fa-pinterest text-white text-5xl pb-3"></i>
+        <h5 class="text-white pb-5 font-bold">UI/UX Designer</h5>
+        <p class="text-paragraf">Lorem Ipsum Dolor Sit Amet merupakan istilah yang sering ditemukan pada demo template blog.</p>
+        <button class="text-white bg-main px-5 py-4 mt-5 rounded">Lihat Project</button>
+      </div>
+      <div class="bg-box pl-5 pr-5 pt-10 pb-12 rounded">
+        <i class="fa-brands fa-html5 text-white text-5xl pb-3"></i>
+        <h5 class="text-white pb-5 font-bold">Web Developer</h5>
+        <p class="text-paragraf">Lorem Ipsum Dolor Sit Amet merupakan istilah yang sering ditemukan pada demo template blog.</p>
+        <button class="text-white bg-main px-5 py-4 mt-5 rounded">Lihat Project</button>
+      </div>
+      <div class="bg-box pl-5 pr-5 pt-10 pb-12 rounded">
+        <i class="fa-brands fa-laravel text-white text-5xl pb-3"></i>
+        <h5 class="text-white pb-5 font-bold">Backend Developer</h5>
+        <p class="text-paragraf">Lorem Ipsum Dolor Sit Amet merupakan istilah yang sering ditemukan pada demo template blog.</p>
+        <button class="text-white bg-main px-5 py-4 mt-5 rounded">Lihat Project</button>
+      </div>
+    </section>
+
+    <!-- TIM -->
+    <section id="tim" class="pt-24">
+      <center>
+        <div class="texting flex flex-col gap-3">
+          <p class="text-main font-bold text-2xl">Member</p>
+          <h4 class="text-white text-5xl font-semibold">Kenali Tim Kami</h4>
+          <p class="text-paragraf text-xl">Anggota berkompeten dengan standar indsutri global</p>
+        </div>
+      </center>
+      <div class="box-team flex justify-center pt-24 gap-4">
+        <div class="box flex flex-col justify-center items-center bg-box gap-5 h-60 w-96 rounded">
+          <img src="../src/img/foto-dewa.png" alt="" class="pt-10" />
+          <h5 class="text-white text-xl">Dewa Krsna Prema Yana</h5>
+          <p class="text-paragraf text-xl">Product Manager</p>
+          <div class="icon text-4xl pb-10">
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-github"></i>
+          </div>
+        </div>
+        <div class="box flex flex-col justify-center items-center bg-box gap-5 h-60 w-96 rounded">
+          <img src="../src/img/foto-dewa.png" alt="" class="pt-10" />
+          <h5 class="text-white text-xl">I Nyoman Suryadana</h5>
+          <p class="text-paragraf text-xl">UI/UX Designer</p>
+          <div class="icon text-4xl pb-10">
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-github"></i>
+          </div>
+        </div>
+      </div>
+      <div class="box-team flex justify-center pt-24 gap-4">
+        <div class="box flex flex-col justify-center items-center bg-box gap-5 h-60 w-96 rounded">
+          <img src="../src/img/foto-dewa.png" alt="" class="pt-10" />
+          <h5 class="text-white text-xl">Rizky Ryan Sahadha</h5>
+          <p class="text-paragraf text-xl">Frontned Developer</p>
+          <div class="icon text-4xl pb-10">
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-github"></i>
+          </div>
+        </div>
+        <div class="box flex flex-col justify-center items-center bg-box gap-5 h-60 w-96 rounded">
+          <img src="../src/img/foto-dewa.png" alt="" class="pt-10" />
+          <h5 class="text-white text-xl">Zidan Abraham</h5>
+          <p class="text-paragraf text-xl">Backend Developer</p>
+          <div class="icon text-4xl pb-10">
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-github"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </html>
