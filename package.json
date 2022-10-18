@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ./src/input.css -o ./public/CSS/output.css --watch"
+    "build": "npx tailwindcss -i ./src/input.css -o ./CSS/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Mezzky/hancook#readme",
   "dependencies": {
+    "postcss": "^8.4.18",
     "tailwindcss": "^3.1.8"
   }
 }
