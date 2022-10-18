@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./public/**/*.{html,js}'],
+  content: ['./index.html'],
   theme: {
     screens: {
       'sm': '320px',
@@ -15,10 +15,11 @@ module.exports = {
         poppins: 'Poppins'
       },
       colors: {
-        primary: '#000F92',
-        secondary: '#404BA9',
-        btn: '#4355FC',
-        shape: '#C4E3FF',
+        box: 'rgba(120, 120, 120, 0.2)',
+        paragraf: '#787878',
+        main: '#500DE0',
+        boxborder: '#4D4D4D',
+        bg: '#212027',
       },
     },
   },

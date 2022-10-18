@@ -5,3 +5,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*Main Style */
+.menu-toggle #hamburger > span{
+    @apply bg-main h-[2px] w-[25px] block transition ease-in-out duration-300;
+}
+
+.menu-toggle #hamburger > span:nth-child(1){
+    @apply origin-top-right w-[30px];
+}
+
+.menu-toggle #hamburger > span:nth-child(3){
+    @apply origin-bottom-right w-[20px];
+}
+
+/* Menu Toggle Animation */
+.hamburger-active > span:nth-child(1) {
+    @apply -rotate-45;
+}
+
+.hamburger-active > span:nth-child(2){
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply rotate-45 w-[30px];
+}
