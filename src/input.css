@@ -7,21 +7,13 @@
 @tailwind utilities;
 
 /*Main Style */
-.menu-toggle #hamburger > span{
-    @apply bg-main h-[2px] w-[25px] block transition ease-in-out duration-300;
-}
-
-.menu-toggle #hamburger > span:nth-child(1){
-    @apply origin-top-right w-[30px];
-}
-
-.menu-toggle #hamburger > span:nth-child(3){
-    @apply origin-bottom-right w-[20px];
+.navbar ul li a{
+    @apply text-white hover:underline;
 }
 
 /* Menu Toggle Animation */
 .hamburger-active > span:nth-child(1) {
-    @apply -rotate-45;
+    @apply -rotate-[40deg];
 }
 
 .hamburger-active > span:nth-child(2){
@@ -29,5 +21,18 @@
 }
 
 .hamburger-active > span:nth-child(3) {
-    @apply rotate-45 w-[30px];
+    @apply w-[35px] rotate-[40deg];
+}
+
+.navbar.slide{
+    @apply visible opacity-100;
+}
+
+/* Scrolled Animation */
+header.scrolled {
+    @apply mt-[20px] w-[90%] rounded-t-2xl bg-box;
+}
+
+header.clicked{
+    @apply rounded-t-2xl;
 }
