@@ -620,16 +620,20 @@ video {
   margin-right: 1.5rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
 
-.mt-12{
-  margin-top: 3rem;
+.mt-3{
+  margin-top: 0.75rem;
 }
 
-.mt-16{
-  margin-top: 4rem;
+.mt-4{
+  margin-top: 1rem;
 }
 
 .block{
@@ -692,6 +696,10 @@ video {
   width: 80%;
 }
 
+.w-1\/3{
+  width: 33.333333%;
+}
+
 .origin-top-right{
   transform-origin: top right;
 }
@@ -718,6 +726,10 @@ video {
 
 .items-center{
   align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -886,8 +898,13 @@ video {
   padding-bottom: 3rem;
 }
 
-.pt-56{
-  padding-top: 14rem;
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.pt-48{
+  padding-top: 12rem;
 }
 
 .pt-32{
@@ -898,12 +915,12 @@ video {
   padding-top: 6rem;
 }
 
-.pt-48{
-  padding-top: 12rem;
-}
-
 .text-center{
   text-align: center;
+}
+
+.text-start{
+  text-align: start;
 }
 
 .font-poppins{
@@ -935,12 +952,42 @@ video {
   line-height: 2.25rem;
 }
 
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-medium{
   font-weight: 500;
 }
 
 .font-semibold{
   font-weight: 600;
+}
+
+.leading-3{
+  line-height: .75rem;
+}
+
+.leading-10{
+  line-height: 2.5rem;
+}
+
+.leading-\[20px\]{
+  line-height: 20px;
+}
+
+.leading-\[40px\]{
+  line-height: 40px;
+}
+
+.leading-\[50px\]{
+  line-height: 50px;
 }
 
 .text-white{
@@ -961,6 +1008,11 @@ video {
 .text-green-500{
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
+.text-bg{
+  --tw-text-opacity: 1;
+  color: rgb(33 32 39 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -1133,6 +1185,10 @@ header.scrolled{
     width: 13rem;
   }
 
+  .laptop\:w-1\/3{
+    width: 33.333333%;
+  }
+
   .laptop\:scale-110{
     --tw-scale-x: 1.1;
     --tw-scale-y: 1.1;
@@ -1200,6 +1256,15 @@ header.scrolled{
 
   .laptop\:pt-\[200px\]{
     padding-top: 200px;
+  }
+
+  .laptop\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .laptop\:leading-\[50px\]{
+    line-height: 50px;
   }
 
   .laptop\:opacity-100{

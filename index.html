@@ -1,274 +1,288 @@
 <!DOCTYPE html>
 <html class="scroll-smooth">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hancook</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/output.css">
+    <link rel="stylesheet" href="CSS/output.css" />
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
-</head> 
+  </head>
 
-<body class="font-poppins bg-bg">
+  <body class="font-poppins bg-bg">
     <!-- <main class="pembungkus overflow-x-hidden w-full relative"> -->
     <!-- <div class="shape w-[500px] h-[500px] tablet:w-[650px] tablet:h-[650px] bg-main/50 absolute -right-[250px] tablet:-left-[200px] -top-[150px] tablet:-top-[200px] rounded-full blur-[100px]"></div> -->
     <!-- Header -->
     <header class="flex m-auto w-full fixed left-0 right-0 justify-between z-50 items-center py-4 px-5 laptop:px-4 duration-300">
-        <h2 class="font-medium text-white text-2xl">Hancook</h2>
-        <div class="navbar invisible opacity-0 p-5 m-auto w-full laptop:w-4/5 bg-box/80 flex flex-col items-start gap-10 absolute left-0 top-[64px] right-0 rounded-b-2xl duration-300 laptop:flex-row laptop:static laptop:visible laptop:opacity-100 laptop:items-center laptop:justify-between laptop:bg-transparent laptop:p-0 laptop:pl-48 laptop:-mr-[1px]">
-            <!-- <div class="background w-full absolute backdrop-blur-sm top-0 bottom-0 right-0 left-0"></div> -->
-            <nav>
-                <ul class="flex flex-col gap-4 laptop:flex-row">
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#jasa">Jasa</a></li>
-                    <li><a href="#team">Tim</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#harga">Harga</a></li>
-                </ul>
-            </nav>
-            <nav class="btn flex justify-between w-full gap-4 laptop:w-52">
-                <button class="py-2 w-1/2 bg-main laptop:duration-100 hover:bg-main/60 rounded-md text-white">Masuk</button>
-                <button class="py-2 w-1/2 bg-boxborder laptop:duration-100 hover:bg-boxborder/60 rounded-md text-white">Daftar</button>
-            </nav>
-        </div>
-        <div class="menu-toggle relative flex items-center h-[30px] w-[30px] laptop:hidden">
-            <button id="hamburger" class="absolute flex flex-col items-end gap-2">
-                <span class="bg-white h-[3px] w-[35px] block transition ease-in-out duration-300 origin-top-right"></span>
-                <span class="bg-white h-[3px] w-[25px] block transition ease-in-out duration-300"></span>
-                <span class="bg-white h-[3px] w-[15px] block transition ease-in-out duration-300 origin-bottom-right"></span>
-            </button>
-        </div>
+      <h2 class="font-medium text-white text-2xl">Hancook</h2>
+      <div
+        class="navbar invisible opacity-0 p-5 m-auto w-full laptop:w-4/5 bg-box/80 flex flex-col items-start gap-10 absolute left-0 top-[64px] right-0 rounded-b-2xl duration-300 laptop:flex-row laptop:static laptop:visible laptop:opacity-100 laptop:items-center laptop:justify-between laptop:bg-transparent laptop:p-0 laptop:pl-48 laptop:-mr-[1px]"
+      >
+        <!-- <div class="background w-full absolute backdrop-blur-sm top-0 bottom-0 right-0 left-0"></div> -->
+        <nav>
+          <ul class="flex flex-col gap-4 laptop:flex-row">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#jasa">Jasa</a></li>
+            <li><a href="#team">Tim</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#harga">Harga</a></li>
+          </ul>
+        </nav>
+        <nav class="btn flex justify-between w-full gap-4 laptop:w-52">
+          <button class="py-2 w-1/2 bg-main laptop:duration-100 hover:bg-main/60 rounded-md text-white">Masuk</button>
+          <button class="py-2 w-1/2 bg-boxborder laptop:duration-100 hover:bg-boxborder/60 rounded-md text-white">Daftar</button>
+        </nav>
+      </div>
+      <div class="menu-toggle relative flex items-center h-[30px] w-[30px] laptop:hidden">
+        <button id="hamburger" class="absolute flex flex-col items-end gap-2">
+          <span class="bg-white h-[3px] w-[35px] block transition ease-in-out duration-300 origin-top-right"></span>
+          <span class="bg-white h-[3px] w-[25px] block transition ease-in-out duration-300"></span>
+          <span class="bg-white h-[3px] w-[15px] block transition ease-in-out duration-300 origin-bottom-right"></span>
+        </button>
+      </div>
     </header>
 
     <!-- Home -->
     <section id="home" class="m-auto flex flex-col items-center pt-48 gap-4 px-6 tablet:px-28 laptop:px-80 laptop:pt-[200px]">
-        <h2 class="text-main font-medium text-lg">Hancook</h2>
-        <p class="text-center text-white font-semibold text-xl">Solusi terbaik untuk pembuatan design, website, dan aplikasi</p>
-        <p class="text-center text-paragraf">Kami menyediakan jasa design web/aplikasi, pembuatan website, dan pembuatan aplikasi. Kami mengedepankan kualitas daripada kuantitas</p>
-        <div class="btn flex w-4/5 gap-4">
-            <a class="py-2 text-center w-1/2 bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="https://wa.me/6289671872255">Kontak</a>
-            <a class="py-2 text-center w-1/2 bg-boxborder laptop:duration-100 hover:bg-boxborder/60 rounded-sm text-sm text-white" href="#jasa">Jasa</a>
-        </div>
+      <h2 class="text-main font-medium text-lg">Hancook</h2>
+      <p class="text-center text-white font-semibold text-xl laptop:text-4xl laptop:leading-[50px]">Solusi terbaik untuk pembuatan design, website, dan aplikasi</p>
+      <p class="text-center text-paragraf">Kami menyediakan jasa design web/aplikasi, pembuatan website, dan pembuatan aplikasi. Kami mengedepankan kualitas daripada kuantitas</p>
+      <div class="btn flex w-4/5 gap-4 justify-center mt-4">
+        <a class="py-4 text-center w-1/2 bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white laptop:w-1/3" href="https://wa.me/6289671872255">Kontak</a>
+        <a class="py-4 text-center w-1/2 bg-boxborder laptop:duration-100 hover:bg-boxborder/60 rounded-sm text-sm text-white laptop:w-1/3" href="#jasa">Jasa</a>
+      </div>
     </section>
 
     <!-- Jasa -->
     <section id="jasa" class="grid grid-cols-1 px-6 mt-16 pt-32 gap-6 tablet:px-28 laptop:pt-[200px] laptop:grid-cols-3">
-        <div class="box flex flex-col items-start gap-4 p-6 bg-box rounded-lg">
-            <i class="fa-brands fa-pinterest p-2 rounded-full bg-boxborder text-white text-2xl"></i>
-            <h3 class="text-white">Web Design</h3>
-            <p class="text-paragraf">Lorem Ipsum Dolor Sit Amet merupakan istilah yang sering ditemukan pada demo template blog.</p>
-            <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Lihat Project</a>
-        </div>
-        <div class="box flex flex-col items-start gap-4 p-6 bg-box rounded-lg">
-            <i class="fa-brands fa-html5 p-2 rounded-full bg-boxborder text-white text-2xl"></i>
-            <h3 class="text-white">Website</h3>
-            <p class="text-paragraf">Lorem Ipsum Dolor Sit Amet merupakan istilah yang sering ditemukan pada demo template blog.</p>
-            <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Lihat Project</a>
-        </div>
-        <div class="box flex flex-col items-start gap-4 p-6 bg-box rounded-lg">
-            <i class="fa-brands fa-laravel p-2 rounded-full bg-boxborder text-white text-2xl"></i>
-            <h3 class="text-white">Web App</h3>
-            <p class="text-paragraf">Lorem Ipsum Dolor Sit Amet merupakan istilah yang sering ditemukan pada demo template blog.</p>
-            <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Lihat Project</a>
-        </div>
+      <div class="box flex flex-col items-start gap-4 p-6 bg-box rounded-lg">
+        <i class="fa-brands fa-pinterest p-2 rounded-full bg-boxborder text-white text-2xl"></i>
+        <h3 class="text-white">Web Design</h3>
+        <p class="text-paragraf">Kami memberikan jasa desain website dengan desain yang menarik dan sesuai dengan permintaan anda.</p>
+        <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Lihat Project</a>
+      </div>
+      <div class="box flex flex-col items-start gap-4 p-6 bg-box rounded-lg">
+        <i class="fa-brands fa-html5 p-2 rounded-full bg-boxborder text-white text-2xl"></i>
+        <h3 class="text-white">Website</h3>
+        <p class="text-paragraf">Jasa pembuatan website yang ramah dikantong, cepat, praktis dan mobile friendly.</p>
+        <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Lihat Project</a>
+      </div>
+      <div class="box flex flex-col items-start gap-4 p-6 bg-box rounded-lg">
+        <i class="fa-brands fa-laravel p-2 rounded-full bg-boxborder text-white text-2xl"></i>
+        <h3 class="text-white">Web App</h3>
+        <p class="text-paragraf">Jasa pembuatan web app dengan fitur yang menarik dan harga yang ramah dikantong.</p>
+        <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Lihat Project</a>
+      </div>
     </section>
 
     <!-- Team -->
     <section id="team" class="grid grid-cols-1 gap-10 pt-32 px-6 tablet:px-28 laptop:px-60">
-        <div class="tittle flex flex-col gap-1 items-center">
-            <h2 class="text-main font-medium text-lg">Member</h2>
-            <p class="text-white text-xl font-medium">Kenali Team Kami</p>
-            <p class="text-center text-paragraf">Anggota berkompeten dengan standar indsutri global</p>
-        </div>
+      <div class="tittle flex flex-col gap-1 items-center">
+        <h2 class="text-main font-medium text-lg">Member</h2>
+        <p class="text-white text-xl font-medium">Kenali Team Kami</p>
+        <p class="text-center text-paragraf">Anggota berkompeten dengan standar indsutri global</p>
+      </div>
 
-        <div class="team grid grid-cols-1 gap-6 laptop:grid-cols-2">
-            <div class="box flex flex-col items-center gap-2 p-6 bg-box rounded-lg">
-                <img src="src/img/foto-dewa.png">
-                <p class="text-white">Dewa Krsna Prema Yana</p>
-                <p class="text-paragraf">Product Manager</p>
-                <div class="link flex items-center gap-2">
-                    <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href="https://github.com/Yanasbruh"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="box flex flex-col items-center gap-2 p-6 bg-box rounded-lg">
-                <img src="src/img/foto-dewa.png">
-                <p class="text-white">I Nyoman Suryadana</p>
-                <p class="text-paragraf">UI/UX Designer</p>
-                <div class="link flex items-center gap-2">
-                    <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href="https://github.com/yourengab"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="box flex flex-col items-center gap-2 p-6 bg-box rounded-lg">
-                <img src="src/img/foto-dewa.png">
-                <p class="text-white">Rizky Ryan Sahadha</p>
-                <p class="text-paragraf">Frontend Developer</p>
-                <div class="link flex items-center gap-2">
-                    <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href="https://www.instagram.com/ikiy_zahadha07/"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href="https://github.com/Mezzky"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="box flex flex-col items-center gap-2 p-6 bg-box rounded-lg">
-                <img src="src/img/foto-dewa.png">
-                <p class="text-white">Zidan Abraham</p>
-                <p class="text-paragraf">Backend Developer</p>
-                <div class="link flex items-center gap-2">
-                    <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href="https://github.com/danzBraham"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
+      <div class="team grid grid-cols-1 gap-6 laptop:grid-cols-2">
+        <div class="box flex flex-col items-center gap-2 p-6 bg-box rounded-lg">
+          <img src="src/img/foto-dewa.png" />
+          <p class="text-white">Dewa Krsna Prema Yana</p>
+          <p class="text-paragraf">Product Manager</p>
+          <div class="link flex items-center gap-2">
+            <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href="https://www.instagram.com/dwkryns/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href="https://github.com/Yanasbruh"><i class="fa-brands fa-github"></i></a>
+          </div>
         </div>
+        <div class="box flex flex-col items-center gap-2 p-6 bg-box rounded-lg">
+          <img src="src/img/foto-surya.png" />
+          <p class="text-white">I Nyoman Suryadana</p>
+          <p class="text-paragraf">UI/UX Designer</p>
+          <div class="link flex items-center gap-2">
+            <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href="https://www.instagram.com/sryadna_/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href="https://github.com/yourengab"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box flex flex-col items-center gap-2 p-6 bg-box rounded-lg">
+          <img src="src/img/foto-rizky.png" />
+          <p class="text-white">Rizky Ryan Sahadha</p>
+          <p class="text-paragraf">Frontend Developer</p>
+          <div class="link flex items-center gap-2">
+            <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href="https://www.instagram.com/ikiy_zahadha07/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href="https://github.com/Mezzky"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box flex flex-col items-center gap-2 p-6 bg-box rounded-lg">
+          <img src="src/img/foto-zidan.png" />
+          <p class="text-white">Zidan Abraham</p>
+          <p class="text-paragraf">Backend Developer</p>
+          <div class="link flex items-center gap-2">
+            <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href="https://www.instagram.com/yoktiatidan/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href="https://github.com/danzBraham"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Project -->
     <section id="project" class="grid grid-cols-1 gap-10 pt-32 px-6 tablet:px-28">
-        <div class="tittle flex flex-col gap-1 items-center">
-            <h2 class="text-main font-medium text-lg">Member</h2>
-            <p class="text-white text-xl font-medium">Kenali Team Kami</p>
-            <p class="text-center text-paragraf">Anggota berkompeten dengan standar indsutri global</p>
-        </div>
+      <div class="tittle flex flex-col gap-1 items-center">
+        <h2 class="text-main font-medium text-lg">Projects</h2>
+        <p class="text-white text-xl font-medium">Project Kami</p>
+        <p class="text-center text-paragraf">Beberapa project yang pernah kami kerjakan secara bersama maupun individual</p>
+      </div>
 
-        <div class="project grid grid-cols-1 gap-6 laptop:grid-cols-2">
-            <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
-                <img src="src/img/helsique.png">
-                <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" target="_blank" href="https://mezzky.github.io/helsique/">Preview</a>
-            </div>
-            <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
-                <img src="src/img/apotiku.png">
-                <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" target="_blank" href="https://mezzky.github.io/apotiku/">Preview</a>
-            </div>
-            <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
-                <img src="src/img/surya-porto.png">
-                <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Preview</a>
-            </div>
-            <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
-                <img src="src/img/mezzky-porto.png">
-                <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" target="_blank" href="https://mezzky.github.io/web-dev-tools/">Preview</a>
-            </div>
-            <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
-                <img src="src/img/yanas-porto.png">
-                <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Preview</a>
-            </div>
-            <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
-                <img src="src/img/danz-porto.png">
-                <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Preview</a>
-            </div>
+      <div class="project grid grid-cols-1 gap-6 laptop:grid-cols-2">
+        <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
+          <img src="src/img/helsique.png" />
+          <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" target="_blank" href="https://mezzky.github.io/helsique/">Preview</a>
         </div>
+        <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
+          <img src="src/img/apotiku.png" />
+          <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" target="_blank" href="https://mezzky.github.io/apotiku/">Preview</a>
+        </div>
+        <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
+          <img src="src/img/surya-porto.png" />
+          <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Preview</a>
+        </div>
+        <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
+          <img src="src/img/mezzky-porto.png" />
+          <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" target="_blank" href="https://mezzky.github.io/web-dev-tools/">Preview</a>
+        </div>
+        <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
+          <img src="src/img/yanas-porto.png" />
+          <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="https://yanasbruh.github.io/Dogabutsu/">Preview</a>
+        </div>
+        <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
+          <img src="src/img/danz-porto.png" />
+          <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" target="_blank" href="https://danzbraham.github.io/dewata-island/">Preview</a>
+        </div>
+      </div>
     </section>
 
     <!-- Harga -->
     <section id="harga" class="grid grid-cols-1 gap-10 pt-32 px-6 tablet:px-28 laptop:gap-16">
-        <div class="tittle flex flex-col gap-2 items-center">
-            <h2 class="text-main font-medium text-lg">Harga</h2>
-            <p class="text-white text-xl font-medium">Harga Jasa Kami</p>
-            <p class="text-center text-paragraf">Lorem Ipsum Dolor Sit Amet merupakan istilah yang sering ditemukan pada demo template blog.</p>
-            <a class="py-2 px-12 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-full text-sm text-white" href="">Paket</a>
+      <div class="tittle flex flex-col gap-2 items-center">
+        <h2 class="text-main font-medium text-lg">Harga</h2>
+        <p class="text-white text-xl font-medium">Harga Jasa Kami</p>
+        <p class="text-center text-paragraf">List paket dan harga dari jasa yang kami berikan.</p>
+        <a class="py-2 px-12 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-full text-sm text-white" href="">Paket</a>
+      </div>
+
+      <div class="harga grid grid-cols-1 gap-6 laptop:grid-cols-3 laptop:gap-10">
+        <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
+          <h2 class="text-xl text-white font-medium">Paket Figma</h2>
+          <p class="text-paragraf">Pembuatan Design dan Mockup Bisnis anda</p>
+          <div class="harga flex items-end">
+            <p class="text-white font-semibold text-xl">50K</p>
+            <span class="text-paragraf text-sm">/Page</span>
+          </div>
+          <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="https://wa.me/6289671872255?text=Hallo%20Min%2C%20Saya%20ingin%20Memesan%20pembuatan%20Design%20Paket%20Figma."
+            >Pesan Sekarang</a
+          >
+          <span class="h-[2px] bg-paragraf w-full"></span>
+          <div class="text flex flex-col gap-4">
+            <p class="text-white text-sm">Apa yang di dapatkan?</p>
+            <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> Design Profesional</p>
+            <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> 1 Page Design</p>
+            <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> 5 kali Revisi</p>
+          </div>
         </div>
 
-        <div class="harga grid grid-cols-1 gap-6 laptop:grid-cols-3 laptop:gap-10">
-            <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
-                <h2 class="text-xl text-white font-medium">Paket Figma</h2>
-                <p class="text-paragraf">Pembuatan Design dan Mockup Bisnis anda</p>
-                <div class="harga flex items-end">
-                    <p class="text-white font-semibold text-xl">50K</p>
-                    <span class="text-paragraf text-sm">/Page</span>
-                </div>
-                <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="https://wa.me/6289671872255?text=Hallo%20Min%2C%20Saya%20ingin%20Memesan%20pembuatan%20Design%20Paket%20Figma.">Pesan Sekarang</a>
-                <span class="h-[2px] bg-paragraf w-full"></span>
-                <div class="text flex flex-col gap-4">
-                    <p class="text-white text-sm">Apa yang di dapatkan?</p>
-                    <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> Design Profesional</p>
-                    <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> 1 Page Design</p>
-                    <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> 5 kali Revisi</p>
-                </div>
-            </div>
-
-            <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg laptop:scale-110">
-                <p class="text-main font-medium text-lg">Populer</p>
-                <h2 class="text-xl text-white font-medium">Paket Javascript</h2>
-                <p class="text-paragraf">Pembuatan Website Company Profile atau Blog anda</p>
-                <div class="harga flex items-end">
-                    <p class="text-white font-semibold text-xl">200K</p>
-                    <span class="text-paragraf text-sm">/Page</span>
-                </div>
-                <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="https://wa.me/6289671872255?text=Hallo%20Min%2C%20Saya%20ingin%20Memesan%20pembuatan%20Website%20Paket%20Javascript.">Pesan Sekarang</a>
-                <span class="h-[2px] bg-paragraf w-full"></span>
-                <div class="text flex flex-col gap-4">
-                    <p class="text-white text-sm">Apa yang di dapatkan?</p>
-                    <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> Design Profesional</p>
-                    <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> 1 Page Design</p>
-                    <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> 5 kali Revisi</p>
-                </div>
-            </div>
-
-            <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
-                <h2 class="text-xl text-white font-medium">Paket PHP</h2>
-                <p class="text-paragraf">Pembuatan WebApp Dinamis Bisnis anda</p>
-                <div class="harga flex items-end">
-                    <p class="text-white font-semibold text-xl">3000K</p>
-                    <span class="text-paragraf text-sm">/Project</span>
-                </div>
-                <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="https://wa.me/6289671872255?text=Hallo%20Min%2C%20Saya%20ingin%20Memesan%20pembuatan%20WebApp%20Paket%20PHP.">Pesan Sekarang</a>
-                <span class="h-[2px] bg-paragraf w-full"></span>
-                <div class="text flex flex-col gap-4">
-                    <p class="text-white text-sm">Apa yang di dapatkan?</p>
-                    <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> Design Profesional</p>
-                    <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> 1 Page Design</p>
-                    <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> 5 kali Revisi</p>
-                </div>
-            </div>
+        <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg laptop:scale-110">
+          <p class="text-main font-medium text-lg">Populer</p>
+          <h2 class="text-xl text-white font-medium">Paket Javascript</h2>
+          <p class="text-paragraf">Pembuatan Website Company Profile atau Blog anda</p>
+          <div class="harga flex items-end">
+            <p class="text-white font-semibold text-xl">200K</p>
+            <span class="text-paragraf text-sm">/Page</span>
+          </div>
+          <a
+            class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white"
+            href="https://wa.me/6289671872255?text=Hallo%20Min%2C%20Saya%20ingin%20Memesan%20pembuatan%20Website%20Paket%20Javascript."
+            >Pesan Sekarang</a
+          >
+          <span class="h-[2px] bg-paragraf w-full"></span>
+          <div class="text flex flex-col gap-4">
+            <p class="text-white text-sm">Apa yang di dapatkan?</p>
+            <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> Design Profesional</p>
+            <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> 1 Page Design</p>
+            <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> 5 kali Revisi</p>
+          </div>
         </div>
+
+        <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
+          <h2 class="text-xl text-white font-medium">Paket PHP</h2>
+          <p class="text-paragraf">Pembuatan WebApp Dinamis Bisnis anda</p>
+          <div class="harga flex items-end">
+            <p class="text-white font-semibold text-xl">3000K</p>
+            <span class="text-paragraf text-sm">/Project</span>
+          </div>
+          <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="https://wa.me/6289671872255?text=Hallo%20Min%2C%20Saya%20ingin%20Memesan%20pembuatan%20WebApp%20Paket%20PHP."
+            >Pesan Sekarang</a
+          >
+          <span class="h-[2px] bg-paragraf w-full"></span>
+          <div class="text flex flex-col gap-4">
+            <p class="text-white text-sm">Apa yang di dapatkan?</p>
+            <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> Design Profesional</p>
+            <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> 1 Page Design</p>
+            <p class="text-white text-sm"><i class="fa-regular fa-square-check text-green-500"></i> 5 kali Revisi</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Kerja Sama -->
     <section class="pt-24 px-6 tablet:px-28">
-        <div class="card p-8 flex flex-col items-center gap-4 bg-main rounded-lg laptop:flex-row laptop:items-end laptop:justify-between">
-            <div class="flex items-start flex-col gap-4">
-                <p class="text-white font-medium text-center text-2xl">Ingin Ngeproject😍 bareng? Gas Langsung Kontak Yaaa!</p>
-                <p class="text-center text-paragraf">Kami membuka kolaborasi dalam hal pembuatan design, website, dan aplikasi</p>
-            </div>
-            <a class="py-4 px-12 text-center bg-bg laptop:duration-100 hover:bg-bg/60 rounded-sm text-sm text-white" href="https://wa.me/6289671872255?text=Hallo%20Min%2C%20Saya%20ingin%20Bekerja%20sama%20dengan%20startup%20Hancook.">Hubungi Kami</a>
+      <div class="card p-8 flex flex-col items-center gap-4 bg-main rounded-lg laptop:flex-row laptop:items-end laptop:justify-between">
+        <div class="flex items-start flex-col gap-4">
+          <p class="text-white font-medium text-start text-2xl">Ingin <span class="font-semibold">Ngeproject</span>😍 bareng? Gas Langsung Kontak Yaaa!</p>
+          <p class="text-start text-bg w-1/2">Kami membuka kolaborasi dalam hal pembuatan design, website, dan aplikasi</p>
         </div>
+        <a class="py-4 px-12 text-center bg-bg laptop:duration-100 hover:bg-bg/60 rounded-sm text-sm text-white" href="https://wa.me/6289671872255?text=Hallo%20Min%2C%20Saya%20ingin%20Bekerja%20sama%20dengan%20startup%20Hancook."
+          >Hubungi Kami</a
+        >
+      </div>
     </section>
 
     <!-- Footer -->
     <section class="footer grid grid-cols-1 gap-6 mt-10 mx-6 py-12 border-y-[1px] border-paragraf tablet:mx-28 laptop:grid-cols-2">
-        <div class="desc flex flex-col gap-6">
-            <h2 class="text-semibold text-main text-2xl">Hancook</h2>
-            <p class="text-paragraf">Tempat menyediakan jasa design web/aplikasi, pembuatan website, dan pembuatan aplikasi.</p>
-            <div class="link flex items-center gap-2">
-                <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href=""><i class="fa-brands fa-instagram"></i></a>
-                <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href=""><i class="fa-brands fa-github"></i></a>
-            </div>
+      <div class="desc flex flex-col gap-6">
+        <h2 class="text-semibold text-main text-2xl">Hancook</h2>
+        <p class="text-paragraf">Tempat menyediakan jasa design web/aplikasi, pembuatan website, dan pembuatan aplikasi.</p>
+        <div class="link flex items-center gap-2">
+          <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href=""><i class="fa-brands fa-instagram"></i></a>
+          <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href=""><i class="fa-brands fa-github"></i></a>
         </div>
+      </div>
 
-        <div class="info flex flex-col gap-6">
-            <div class="nav">
-                <h2 class="text-white font-medium text-xl"><i class="fa-solid fa-location-arrow"></i> Navigasi</h2>
-                <ul class="flex items-center gap-2">
-                    <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#home">Beranda</a></li>
-                    <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#jasa">Jasa</a></li>
-                    <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#team">Tim</a></li>
-                    <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#project">Project</a></li>
-                    <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#harga">Harga</a></li>
-                </ul>
-            </div>
-            <div class="location">
-                <h2 class="text-white font-medium text-xl"><i class="fa-solid fa-location-dot"></i> Alamat</h2>
-                <p class="text-paragraf">Jalan Pulau Moyo Perum Moyo Permain No 1  Bali, Indonesia</p>
-            </div>
+      <div class="info flex flex-col gap-6">
+        <div class="nav">
+          <h2 class="text-white font-medium text-xl"><i class="fa-solid fa-location-arrow"></i> Navigasi</h2>
+          <ul class="flex items-center gap-2">
+            <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#home">Beranda</a></li>
+            <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#jasa">Jasa</a></li>
+            <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#team">Tim</a></li>
+            <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#project">Project</a></li>
+            <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#harga">Harga</a></li>
+          </ul>
         </div>
+        <div class="location">
+          <h2 class="text-white font-medium text-xl"><i class="fa-solid fa-location-dot"></i> Alamat</h2>
+          <p class="text-paragraf">Jalan Pulau Moyo Perum Moyo Permain No 1 Bali, Indonesia</p>
+        </div>
+      </div>
     </section>
     <footer class="text-center text-sm p-6 text-paragraf">©Copyright 2022 - Hancook.</footer>
 
     <!-- Chat WhatsApp -->
-    <a class="fixed bottom-2 right-2 z-50 text-3xl text-white py-1 px-2 rounded-md bg-green-500 duration-200 hover:bg-green-300" href="https://wa.me/6289671872255?text=Hallo%20Min%2C%20Saya%20ingin%20Menanyakan%20Beberapa%20hal%20mengenai%20Jasa%20dari%20Hancook."><i class="fa-brands fa-whatsapp"></i></a>
-    
+    <a
+      class="fixed bottom-2 right-2 z-50 text-3xl text-white py-1 px-2 rounded-md bg-green-500 duration-200 hover:bg-green-300"
+      href="https://wa.me/6289671872255?text=Hallo%20Min%2C%20Saya%20ingin%20Menanyakan%20Beberapa%20hal%20mengenai%20Jasa%20dari%20Hancook."
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
+
     <!-- </main> -->
     <script src="JS/script.js"></script>
-</body>
-
+  </body>
 </html>
