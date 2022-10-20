@@ -8,7 +8,7 @@
 
 /*Main Style */
 .navbar ul li a{
-    @apply text-white hover:underline;
+    @apply text-white duration-100 hover:underline;
 }
 
 /* Menu Toggle Animation */
@@ -16,7 +16,7 @@
     @apply -rotate-[40deg];
 }
 
-.hamburger-active > span:nth-child(2){
+.hamburger-active > span:nth-child(2) {
     @apply scale-0;
 }
 
@@ -24,11 +24,15 @@
     @apply w-[35px] rotate-[40deg];
 }
 
-.navbar.slide{
+.navbar.slide {
     @apply visible opacity-100 backdrop-blur-sm;
 }
 
 /* Scrolled Animation */
 header.scrolled {
-    @apply mt-[20px] w-[90%] rounded-t-2xl bg-box/90;
+    @apply mt-[20px] w-[90%] rounded-t-2xl bg-box/95;
+}
+
+.navbar.scrolled {
+    @apply laptop:pl-32;
 }
