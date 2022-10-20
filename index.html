@@ -17,9 +17,10 @@
     <!-- Header -->
     <header class="flex m-auto w-full fixed left-0 right-0 justify-between z-50 items-center py-4 px-5 duration-300">
         <h2 class="font-medium text-white text-2xl">Hancook</h2>
-        <div class="navbar invisible opacity-0 p-5 m-auto w-full flex flex-col items-start gap-10 absolute left-0 top-[64px] right-0 bg-box rounded-b-2xl duration-300">
+        <div class="navbar invisible opacity-0 p-5 m-auto w-full laptop:w-9/12 bg-box flex flex-col items-start gap-10 absolute left-0 top-[64px] right-0 rounded-b-2xl duration-300 laptop:flex-row laptop:static laptop:visible laptop:opacity-100 laptop:items-center laptop:justify-between laptop:bg-transparent laptop:p-0">
+            <!-- <div class="background w-full absolute backdrop-blur-sm top-0 bottom-0 right-0 left-0"></div> -->
             <nav>
-                <ul class="flex flex-col gap-4">
+                <ul class="flex flex-col gap-4 laptop:flex-row">
                     <li><a href="#home">Beranda</a></li>
                     <li><a href="#jasa">Jasa</a></li>
                     <li><a href="#team">Tim</a></li>
@@ -27,7 +28,7 @@
                     <li><a href="#harga">Harga</a></li>
                 </ul>
             </nav>
-            <nav class="btn flex justify-between w-full gap-4">
+            <nav class="btn flex justify-between w-full gap-4 laptop:w-52">
                 <button class="py-2 w-1/2 bg-main laptop:duration-100 hover:bg-main/60 rounded-md text-white">Masuk</button>
                 <button class="py-2 w-1/2 bg-boxborder laptop:duration-100 hover:bg-boxborder/60 rounded-md text-white">Daftar</button>
             </nav>
@@ -42,7 +43,7 @@
     </header>
 
     <!-- Home -->
-    <section id="home" class="m-auto flex flex-col items-center pt-32 gap-4 px-6">
+    <section id="home" class="m-auto flex flex-col items-center pt-32 gap-4 px-6 tablet:px-28 laptop:px-80 laptop:pt-[200px]">
         <h2 class="text-main font-medium text-lg">Hancook</h2>
         <p class="text-center text-white font-semibold text-xl">Solusi terbaik untuk pembuatan design, website, dan aplikasi</p>
         <p class="text-center text-paragraf">Kami menyediakan jasa design web/aplikasi, pembuatan website, dan pembuatan aplikasi. Kami mengedepankan kualitas daripada kuantitas</p>
@@ -53,7 +54,7 @@
     </section>
 
     <!-- Jasa -->
-    <section id="jasa" class="grid grid-cols-1 px-6 pt-32 gap-6">
+    <section id="jasa" class="grid grid-cols-1 px-6 pt-32 gap-6 tablet:px-28 laptop:pt-[200px] laptop:grid-cols-3">
         <div class="box flex flex-col items-start gap-4 p-6 bg-box rounded-lg">
             <i class="fa-brands fa-pinterest p-2 rounded-full bg-boxborder text-white text-2xl"></i>
             <h3 class="text-white">Web Design</h3>
@@ -62,27 +63,27 @@
         </div>
         <div class="box flex flex-col items-start gap-4 p-6 bg-box rounded-lg">
             <i class="fa-brands fa-html5 p-2 rounded-full bg-boxborder text-white text-2xl"></i>
-            <h3 class="text-white">Web Design</h3>
+            <h3 class="text-white">Website</h3>
             <p class="text-paragraf">Lorem Ipsum Dolor Sit Amet merupakan istilah yang sering ditemukan pada demo template blog.</p>
             <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Lihat Project</a>
         </div>
         <div class="box flex flex-col items-start gap-4 p-6 bg-box rounded-lg">
             <i class="fa-brands fa-laravel p-2 rounded-full bg-boxborder text-white text-2xl"></i>
-            <h3 class="text-white">Web Design</h3>
+            <h3 class="text-white">Web App</h3>
             <p class="text-paragraf">Lorem Ipsum Dolor Sit Amet merupakan istilah yang sering ditemukan pada demo template blog.</p>
             <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Lihat Project</a>
         </div>
     </section>
 
     <!-- Team -->
-    <section id="team" class="grid grid-cols-1 gap-10 pt-32 px-6">
+    <section id="team" class="grid grid-cols-1 gap-10 pt-32 px-6 tablet:px-28 laptop:px-60">
         <div class="tittle flex flex-col gap-1 items-center">
             <h2 class="text-main font-medium text-lg">Member</h2>
             <p class="text-white text-xl font-medium">Kenali Team Kami</p>
             <p class="text-center text-paragraf">Anggota berkompeten dengan standar indsutri global</p>
         </div>
 
-        <div class="team grid grid-cols-1 gap-6">
+        <div class="team grid grid-cols-1 gap-6 laptop:grid-cols-2">
             <div class="box flex flex-col items-center gap-2 p-6 bg-box rounded-lg">
                 <img src="src/img/foto-dewa.png">
                 <p class="text-white">Dewa Krsna Prema Yana</p>
@@ -123,14 +124,14 @@
     </section>
 
     <!-- Project -->
-    <section id="project" class="grid grid-cols-1 gap-10 pt-32 px-6">
+    <section id="project" class="grid grid-cols-1 gap-10 pt-32 px-6 tablet:px-28">
         <div class="tittle flex flex-col gap-1 items-center">
             <h2 class="text-main font-medium text-lg">Member</h2>
             <p class="text-white text-xl font-medium">Kenali Team Kami</p>
             <p class="text-center text-paragraf">Anggota berkompeten dengan standar indsutri global</p>
         </div>
 
-        <div class="project grid grid-cols-1 gap-6">
+        <div class="project grid grid-cols-1 gap-6 laptop:grid-cols-2">
             <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
                 <img src="src/img/helsique.png">
                 <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Preview</a>
@@ -151,7 +152,7 @@
     </section>
 
     <!-- Harga -->
-    <section id="harga" class="grid grid-cols-1 gap-10 pt-32 px-6">
+    <section id="harga" class="grid grid-cols-1 gap-10 pt-32 px-6 tablet:px-28">
         <div class="tittle flex flex-col gap-2 items-center">
             <h2 class="text-main font-medium text-lg">Harga</h2>
             <p class="text-white text-xl font-medium">Harga Jasa Kami</p>
@@ -159,7 +160,7 @@
             <a class="py-2 px-12 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-full text-sm text-white" href="">Paket</a>
         </div>
 
-        <div class="harga grid grid-cols-1 gap-6">
+        <div class="harga grid grid-cols-1 gap-6 laptop:grid-cols-3">
             <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
                 <h2 class="text-xl text-white font-medium">Paket Figma</h2>
                 <p class="text-paragraf">Pembuatan Design dan Mockup Bisni anda</p>
@@ -178,10 +179,11 @@
             </div>
 
             <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
-                <h2 class="text-xl text-white font-medium">Paket Figma</h2>
+                <p class="text-main font-medium text-lg">Harga</p>
+                <h2 class="text-xl text-white font-medium">Paket Javascript</h2>
                 <p class="text-paragraf">Pembuatan Design dan Mockup Bisni anda</p>
                 <div class="harga flex items-end">
-                    <p class="text-white font-semibold text-xl">50K</p>
+                    <p class="text-white font-semibold text-xl">200K</p>
                     <span class="text-paragraf text-sm">/Page</span>
                 </div>
                 <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Pesan Sekarang</a>
@@ -195,10 +197,10 @@
             </div>
 
             <div class="box flex flex-col gap-4 p-6 bg-box rounded-lg">
-                <h2 class="text-xl text-white font-medium">Paket Figma</h2>
+                <h2 class="text-xl text-white font-medium">Paket PHP</h2>
                 <p class="text-paragraf">Pembuatan Design dan Mockup Bisni anda</p>
                 <div class="harga flex items-end">
-                    <p class="text-white font-semibold text-xl">50K</p>
+                    <p class="text-white font-semibold text-xl">300K</p>
                     <span class="text-paragraf text-sm">/Page</span>
                 </div>
                 <a class="py-2 px-4 text-center bg-main laptop:duration-100 hover:bg-main/60 rounded-sm text-sm text-white" href="">Pesan Sekarang</a>
@@ -214,38 +216,45 @@
     </section>
 
     <!-- Kerja Sama -->
-    <section class="pt-24 px-6">
-        <div class="card p-8 flex flex-col items-center gap-4 bg-main rounded-lg">
-            <p class="text-white font-medium text-center text-2xl">Ingin Ngeproject😍 bareng? Gas Langsung Kontak Yaaa!</p>
-            <p class="text-center text-paragraf">Kami membuka kolaborasi dalam hal pembuatan design, website, dan aplikasi</p>
+    <section class="pt-24 px-6 tablet:px-28">
+        <div class="card p-8 flex flex-col items-center gap-4 bg-main rounded-lg laptop:flex-row laptop:items-end laptop:justify-between">
+            <div class="flex items-start flex-col gap-4">
+                <p class="text-white font-medium text-center text-2xl">Ingin Ngeproject😍 bareng? Gas Langsung Kontak Yaaa!</p>
+                <p class="text-center text-paragraf">Kami membuka kolaborasi dalam hal pembuatan design, website, dan aplikasi</p>
+            </div>
             <a class="py-4 px-12 text-center bg-bg laptop:duration-100 hover:bg-bg/60 rounded-sm text-sm text-white" href="">Hubungi Kami</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <section class="footer flex flex-col gap-6 mt-10 mx-6 py-12 border-y-[1px] border-paragraf">
+    <section class="footer grid grid-cols-1 gap-6 mt-10 mx-6 py-12 border-y-[1px] border-paragraf tablet:mx-28 laptop:grid-cols-2">
+        <div class="desc flex flex-col gap-6">
             <h2 class="text-semibold text-main text-2xl">Hancook</h2>
             <p class="text-paragraf">Tempat menyediakan jasa design web/aplikasi, pembuatan website, dan pembuatan aplikasi.</p>
             <div class="link flex items-center gap-2">
                 <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href=""><i class="fa-brands fa-instagram"></i></a>
                 <a class="py-1 px-2 bg-boxborder rounded-sm text-white duration-100 hover:bg-boxborder/60" href=""><i class="fa-brands fa-github"></i></a>
             </div>
+        </div>
+
+        <div class="info flex flex-col gap-6">
             <div class="nav">
                 <h2 class="text-white font-medium text-xl"><i class="fa-solid fa-location-arrow"></i> Navigasi</h2>
                 <ul class="flex items-center gap-2">
-                    <li><a class="text-sm text-paragraf duration-100 hover:underline " href="#home">Beranda</a></li>
-                    <li><a class="text-sm text-paragraf duration-100 hover:underline " href="#jasa">Jasa</a></li>
-                    <li><a class="text-sm text-paragraf duration-100 hover:underline " href="#">Tim</a></li>
-                    <li><a class="text-sm text-paragraf duration-100 hover:underline " href="#">Project</a></li>
-                    <li><a class="text-sm text-paragraf duration-100 hover:underline " href="#">Harga</a></li>
+                    <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#home">Beranda</a></li>
+                    <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#jasa">Jasa</a></li>
+                    <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#team">Tim</a></li>
+                    <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#project">Project</a></li>
+                    <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#harga">Harga</a></li>
                 </ul>
             </div>
             <div class="location">
                 <h2 class="text-white font-medium text-xl"><i class="fa-solid fa-location-dot"></i> Alamat</h2>
                 <p class="text-paragraf">Jalan Pulau Moyo Perum Moyo Permain No 1  Bali, Indonesia</p>
             </div>
+        </div>
     </section>
-    <footer class="text-center text-sm p-6 text-paragraf mt-4">©Copyright 2022 - Hancook.</footer>
+    <footer class="text-center text-sm p-6 text-paragraf">©Copyright 2022 - Hancook.</footer>
     
     <!-- </main> -->
     <script src="JS/script.js"></script>

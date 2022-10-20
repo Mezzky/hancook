@@ -25,14 +25,10 @@
 }
 
 .navbar.slide{
-    @apply visible opacity-100;
+    @apply visible opacity-100 backdrop-blur-sm;
 }
 
 /* Scrolled Animation */
 header.scrolled {
-    @apply mt-[20px] w-[90%] rounded-t-2xl bg-box;
-}
-
-header.clicked{
-    @apply rounded-t-2xl;
+    @apply mt-[20px] w-[90%] rounded-t-2xl bg-box/90;
 }

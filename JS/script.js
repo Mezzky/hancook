@@ -9,8 +9,10 @@ const header = document.querySelector('header');
 window.addEventListener('scroll', () => {
     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
         header.classList.add('scrolled');
+        // nav.classList.add('scrolled');
     } else{
         header.classList.remove('scrolled');
+        // nav.classList.remove('scrolled');
     }
 });
 
@@ -22,5 +24,5 @@ hamburger.addEventListener('click', () => {
 // Menu Toggle
 menuToggle.addEventListener('click', () => {
     nav.classList.toggle('slide');
-    header.classList.toggle('clicked');
+    // header.classList.remove('slide');
 });
